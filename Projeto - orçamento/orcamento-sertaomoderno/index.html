@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento Sertão Moderno</title>
+    <link rel="shortcut icon" href="/orcamento-sertaomoderno/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="index.js"></script>
+</head> 
+<body>
+     <nav id="OCULTAR">
+        <div>
+            <img src="logo sertão moderno.png" alt="Logo" class="logo">
+        </div>
+        <button onclick="window.location.reload()" id="OCULTAR" class="glow-on-hover">APAGAR</button> <!--botao para atualizar a pagina-->
+        <button onclick="window.print()" id="OCULTAR" class="glow-on-hover">IMPRIMIR</button> <!--Comando usado para imprimir a tela-->
+        <a href="https://wa.me/5588988188728" target="_blank"><button class="glow-on-hover">SUPORTE</button></a></a> <!-- bota de suporte-->
+        <a href="https://feliperodriguesdevp.netlify.app/"><img src="minhalogotipo.gif" alt="" class="meulogo" width="200px"></a>
+    </nav>
+<div class="titulo"><h1><img src="logo sertão moderno.png" alt="logotipo" width="105px" class="logoecnpj">
+<h5>CNPJ: 32.089.800/0001-17</h5>
+<h1>Orçamento</h1>
+ </div>
+<div>
+    <label for="Data" class="lab-data">Data:</label>
+    <input type="date" class="Data" id="impressaodata"><br>
+
+    <label for="Cliente" class="lab-cliente">Cliente:</label>
+    <input type="text" required class="Cliente" placeholder="Nome e Sobrenome..." id="impressaocliente"><br>
+
+    <label class="lab-cliente">Qtd De Pessoas:</label>
+    <input type="number" class="QuantidadeDePessoas" id="quantidadedepessoas" oninput="calcularValorPorPessoa()"><br>
+
+    <label class="lab-cliente">Ger. Responsavel:</label>
+    <input type="text" required class="Gerente" placeholder="Nome..." id="Gerente"><br>
+
+
+</div>
+
+<div class="entradas" id="inputsimpressao">
+    <button type="button" onclick="adicionarInputEntradas()" id="muda1" class="glow-on-hover2">Entradas</button>  
+
+</div>
+
+
+<div class="Prato Principal" id="inputsimpressao2">
+    <button type="button" onclick="adicionarInputPrincipal()" id="muda1" class="glow-on-hover2">Prato Principal</button> 
+</div>
+
+
+<div class="Bebidas" id="inputsimpressao3">
+    <button type="button" onclick="adicionarInputBebidas()" id="muda1" class="glow-on-hover2">Bebidas</button> 
+</div>
+
+
+
+
+<div class="Sobremesas" id="inputsimpressao4">
+    <button type="button" onclick="adicionarInputSobremesas()" id="muda1" class="glow-on-hover2">Sobremesas</button> 
+</div>
+
+
+
+<div class="Sobremesas">
+
+<label for="Desconto" class="Desconto1">Desconto%:</label>
+<input type="text" name="Desconto" class="Desconto" id="descontoPorcentagem" oninput="aplicarDesconto()" placeholder="%"><br><br>
+
+<label for="valorPorpessoa" class="valorPorpessoa">Valor Por Pessoa R$:</label>
+<input type="number" class="valorPorpessoa2" id="tt" readonly><br>
+
+
+<label for="valorPorpessoa" class="valorPorpessoa">Sub-Tototal R$:</label>
+<input type="number" class="resultado" id="resultado"readonly><br><br>
+
+<label for="valorPorpessoa" class="valorPorpessoa"><h2>Total R$</h2></label>
+<input type="number" class="valorPorpessoa1" id="totalComDesconto" readonly oninput="calcularValorPorPessoa()"><br>
+
+
+
+
+</div>
+<footer>
+<div><a href="https://feliperodriguesdev.netlify.app">
+<img src="minhalogotipo.gif" alt="" class="meulogofooter" width="200px"></a></div>
+    © 2025 Felipe.dev - Todos os direitos reservados.
+</footer>
+</body>
+</html>

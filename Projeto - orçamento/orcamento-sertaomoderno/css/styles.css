@@ -1,0 +1,1032 @@
+* {  /* sempre usar o codigo ficar responsivo em todos os pcs */
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    } 
+
+body{
+    
+    background-color: #502c2a;
+    padding-top: -50px;
+    margin-top: 1px;
+}
+
+nav{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.334) 2px 5px;
+    border-radius: 5px;
+    background: linear-gradient(#502c2a, black);
+    padding: 15px;
+    margin-top: -4px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .meulogo{
+    position: absolute;
+    margin-top: -75px;
+    margin-left: 150px;
+}
+
+  .logo{
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    margin-top: -13px;
+    margin-left: -680px;
+  }
+
+  .logoecnpj, h5{  /* usado para não aparecer o logo nem cpnj na tela do usuario*/
+    display: none;
+  }
+
+
+
+h1{
+    padding-bottom: 1px;
+    padding-top: 35px;
+    color: white;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+
+h3{
+    color: #f1f1f1;
+    margin-left: 50px;
+    padding-left: 25px;
+    padding-right: -50px;
+    text-align: center;
+}
+
+.sumirsubtitulo,.sumirituloentradas{
+    font-size: 0%;
+    color: #502c2a;
+}
+
+
+.titulo{
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+input{ /*DETERMINA TODOS OS INPUTS */
+    background-color: white;  /* COR DE FUNDO DO INPUT */
+    width: 30%; /* DETERMINA A LARGURA O INPUT*/
+    border-radius: 5px;
+    padding-bottom: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+    margin: 2px; /* Determina a distacia entre um unput e outro*/
+}
+
+
+input:hover{  /* usado para fazer amimações ao passar o mouse por cima do input*/
+    background-color: black;
+    border: solid 1px black;
+    color: white;
+    padding: 3px;
+}
+
+.QuantidadeDePessoas{
+    text-align: center;
+    width: 5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Gerente{
+    width: 10%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Cliente{
+    width: 20%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Data{
+    width: 10%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.lab-cliente{
+    color: white;
+    padding-left: 5px;
+}
+
+.lab-data{
+    color: white;
+    padding-left: 5px;
+}
+.entradas{
+    text-align: center;  /* determina onde ira ficar os inputs que estao dentro da div*/
+    color: white;
+    padding: 15px;
+}
+
+.Principal{
+    text-align: center;  /* determina onde ira ficar os inputs que estao dentro da div*/
+    color: white;
+    padding: 15px;
+}
+
+
+
+.Bebidas{
+    text-align: center;  /* determina onde ira ficar os inputs que estao dentro da div*/
+    color: white;
+    padding: 15px;
+}
+
+.Sobremesas{
+    text-align: center;  /* determina onde ira ficar os inputs que estao dentro da div*/
+    color: white;
+    padding: 15px;
+}
+
+.Preço{ /*input preços*/
+    text-align: center;
+    width: 6%;
+    border-radius: 5px;
+}
+
+.Qtd{ /*input Quantidade*/
+    text-align: center;
+    width: 5%;
+    border-radius: 5px;
+}
+
+.Total{ /*input Total*/
+    text-align: center;
+    left: 90px;
+    width: 7%;
+    border-radius: 5px;
+}
+
+.Desconto1{
+    color: white;
+    padding-left: 5px;
+}
+
+.Desconto{
+    background-color: white;
+    text-align: center;
+    margin: 1px;
+    width: 3%;
+    margin-top: 10px;
+}
+
+.lab-servico{
+    color: white;
+}
+
+.Total-geral{
+    text-align: center;
+    color: white;
+    padding-left: 5px;
+    font-size: x-large;
+}
+.resultado{
+    text-align: center;
+    margin: 10px;
+    width: 7%;
+    padding: 0%;
+}
+
+.valorPorpessoa1{
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    width: 10%;
+    padding: 0%;
+    font-size: x-large;
+}
+
+.valorPorpessoa2{
+    text-align: center;
+    margin: 10px;
+    width: 7%;
+    padding: 0%;
+}
+
+
+
+
+
+
+
+
+.meulogofooter{
+    display: none;
+}
+
+
+footer{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* inicio da configurando de impressão */
+
+@media print {
+    .logoecnpj{
+        display: ruby;
+        margin-bottom: -5px;
+        margin-top: -200px;
+    }
+    h5{
+        display: ruby;
+        color: #f1f1f1;
+    }
+    h1{
+        margin-top: -15px;
+    }
+}
+
+
+
+@media print{
+    .sumirituloentradas{
+        font-size: 110%;
+        color: white;
+    }
+}
+
+
+@media print{
+    .sumirsubtitulo{
+        font-size: 90%;
+        color: rgb(255, 255, 255);
+        padding: 0%;
+        margin-top: -10px;
+    }
+}
+
+
+@media print{
+    .sumirsubtitulo{
+        word-spacing: 20%;
+    }
+}
+
+
+@media print{
+    #muda1{
+        display: none;
+    }
+}
+
+
+@media print{
+    #muda2{
+        display: none;
+    }
+}
+
+
+@media print{
+    #muda3{
+        display: none;
+    }
+}
+
+
+@media print{
+    #muda4{
+        display: none;
+    }
+}
+
+
+@media print {
+footer{
+ display: none;
+    }
+}
+
+@media print{
+    #impressaotitulo{
+       color: rgb(255, 255, 255);
+       margin-left: 50px;
+       padding-left: 25px;
+       padding-right: -50px;
+       text-align: center;
+    }
+   }
+
+
+@media print{  /* ocultar botoes sempre buscar pelo id */
+    #OCULTAR {display: none;}
+    }
+
+@media print{  /* configuração da impressao dos inputs do prato principal, bebidas, sobremesas*/
+    #inputsimpressao,#inputsimpressao2,#inputsimpressao3,#inputsimpressao4  {
+        width: 155%;
+        margin-left: -250px;
+    }
+}
+
+
+
+@media print{
+    #totalComDesconto{
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    width: 15%;
+    padding: 0%;
+    font-size: x-large;
+    }
+}
+
+@media print {
+    #resultado{
+    text-align: center;
+    margin: 10px;
+    width: 12%;
+    padding: 0%;
+    }
+    
+}
+
+@media print {
+    #tt{
+    text-align: center;
+    margin: 10px;
+    width: 10%;
+    padding: 0%;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media print {
+    #impressaodata{
+        width: 113px;
+        font-size: 15px;
+    }
+}
+
+
+/* usado para não imprimir os inputs que não tem conteudo */
+@media print {
+    input:not(:placeholder-shown){
+        background-color:white
+    }
+    input:placeholder-shown{
+        display: none;
+    }
+}
+
+
+/* usado para não imprimir os inputs que não tem conteudo */
+
+@media print {
+    #impressaocliente{
+        width: 230px;
+        font-size: 15px;
+    }
+}
+
+@media print {
+    .Gerente{
+        text-align: center;
+        width: 80px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+/* amimação dos botoes*/
+     .glow-on-hover {
+        width: 135px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+    
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+    
+    .glow-on-hover:active {
+        color: #000
+    }
+    
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+    
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+    
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #502c2a;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+    
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+  /* animação botoes de adicionar os inputs*/
+
+  .glow-on-hover2 {
+    width: 135px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover2:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover2:active {
+    color: #000
+}
+
+.glow-on-hover2:active:after {
+    background: transparent;
+}
+
+.glow-on-hover2:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover2:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+
+
+/*inicio animação para rmeover os inputs*/
+
+.remove-button {
+    width: 100px;
+    height: 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.remove-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.remove-button:active {
+    color: #000
+}
+
+.remove-button:active:after {
+    background: transparent;
+}
+
+.remove-button:hover:before {
+    opacity: 1;
+}
+
+.remove-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+    
+
+    /* inicio estilizacao para mobile*/
+
+    @media screen and (max-width: 600px){
+* {  /* sempre usar o codigo ficar responsivo em todos os pcs */
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    } 
+
+    @media print{
+        body{
+            background-color: white;
+        }
+    }
+
+.meulogofooter{
+    display: ruby;
+    text-align: center;
+    padding-top: -20px;
+    margin-top: -75px;
+    }
+
+
+    .QuantidadeDePessoas{
+        text-align: center;
+        width: 8%;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .Gerente{
+        width: 16%;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+    .remove-button {
+        width: 70px;
+        height: 25px;
+        margin-top: 3px;
+        margin-bottom: 15px;
+        margin-left: 81.5%;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 8px;
+    }
+
+
+
+     /* animação botoes de adicionar os inputs*/
+
+  .glow-on-hover2 {
+    width: 135px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover2:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover2:active {
+    color: #000
+}
+
+.glow-on-hover2:active:after {
+    background: transparent;
+}
+
+.glow-on-hover2:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover2:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+body{
+    
+    background-color: #502c2a;
+    padding-top: -50px;
+    margin-top: 1px;
+}
+
+nav{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.334) 2px 5px;
+    border-radius: 2px;
+    background: linear-gradient(#502c2a, black);
+    padding: 8px;
+    margin-top: -4px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+
+
+h1{
+    padding-bottom: 1px;
+    padding-top: 35px;
+    color: white;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin-left: 9%;
+}
+
+h3{
+    color: #502c2a;
+}
+
+
+#impressaotitulo{
+    padding: none;
+    font-size: 0%;  /* deixa o texto invisivel */
+}
+
+
+.titulo{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+input{ /*DETERMINA TODOS OS INPUTS */
+    background-color: white;  /* COR DE FUNDO DO INPUT */
+    width: 35%; /* DETERMINA A LARGURA O INPUT*/
+    padding: 6px; /* determina a altura do input */
+    border-radius: 5px;
+    padding-bottom: 3px;
+    border: 1px solid #ffffff;
+    font-size: small;
+    font-family: monospace;
+    margin: 2px; /* Determina a distacia entre um unput e outro*/
+}
+
+
+input:hover{  /* usado para fazer amimações ao passar o mouse por cima do input*/
+    /*padding: 5px;*/
+    background-color: black;
+    border: solid 1px black;
+    color: white;
+}
+
+
+.Cliente{
+    width: 40%;
+    font-family: monospace;
+}
+
+.Data{
+    width: 30%;
+    font-family: monospace;
+}
+.lab-cliente{
+    color: white;
+    padding-left: 5px;
+}
+
+.lab-data{
+    color: white;
+    padding-left: 5px;
+}
+.entradas{
+    text-align: start;  /* determina onde ira ficar os inputs que estao dentro da div*/
+    color: white;
+    padding: 15px;
+}
+
+.Principal{
+    text-align: start;  /* determina onde ira ficar os inputs que estao dentro da div*/
+    color: white;
+    padding: 15px;
+}
+
+.Bebidas{
+    text-align: start;  /* determina onde ira ficar os inputs que estao dentro da div*/
+    color: white;
+    padding: 15px;
+}
+
+.Sobremesas{
+    text-align: start;  /* determina onde ira ficar os inputs que estao dentro da div*/
+    color: white;
+    padding: 15px;
+}
+
+.Preço{ /*input preços*/
+    text-align: center;
+    width: 16%;
+    border-radius: 5px;
+}
+
+.Qtd{ /*input Quantidade*/
+    text-align: center;
+    width: 9%;
+    border-radius: 5px;
+}
+
+.Total, .Total1, .Total2,
+.Total3, .Total4, .Total5,
+.Total6, .Total7, .Total8,
+.Total9, .Total10, .Total11,
+.Total12, .Total13, .Total14,
+.Total15, .Total16, .Total17,
+.Total18, .Total19, .Total20,
+.Total21, .Total22, .Total23{ /*input Total*/
+    text-align: center;
+    width: 13%;
+    border-radius: 5px;
+}
+
+.Desconto1{
+    color: white;
+    padding-left: 125px;
+}
+
+.Desconto{
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    width: 10%;
+    padding: 5px;
+}
+
+.lab-servico{
+    color: white;
+}
+
+.Total-geral{
+    text-align: center;
+    color: white;
+    padding-left: 100px;
+    font-size: x-large;
+    width: 30%;
+}
+.resultado{
+    text-align: center;
+    margin: 7px;
+    width: 25%;
+    padding: 2px;
+    font-family: monospace;
+    font-size: large;
+}
+
+
+.valorPorpessoa{
+    margin-left: 0%;
+    padding: 0%;
+}
+
+
+.valorPorpessoa1{
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin-left: 37.5%;
+    width: 30%;
+    padding: 2%;
+    font-size: x-large;
+}
+
+.valorPorpessoa2{
+    text-align: center;
+    margin: 7px;
+    width: 25%;
+    padding: 0%;
+    font-family: monospace;
+    font-size: large;
+}
+
+
+
+
+/* amimação dos botoes*/
+     .glow-on-hover {
+        width: 85px;
+        height: 45px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover2 {
+        width: 85px;
+        margin-left: 41.5%;
+        height: 35px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+
+
+    
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+    
+    .glow-on-hover:active {
+        color: #000
+    }
+    
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+    
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+    
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #502c2a;;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+    
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+    
